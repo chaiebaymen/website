@@ -7,4 +7,4 @@ project-url: https://github.com/django-erp/django-erp
 project-download-url: https://github.com/django-erp/django-erp
 wiki-url: https://github.com/django-erp/django-erp/wiki
 markdown: redcarpet
-pygments: true
+highlighter: pygments
