@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie9 ie8 ie7 ie6" lang="en"><![endif]-->
+<!--[if IE 7]><html class="ie9 ie8 ie7" lang="en"><![endif]-->
+<!--[if IE 8]><html class="ie9 ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="en"><!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+	    <title>{{ site.name }} | {{ page.title }}</title>
+        <link rel="shortcut icon" href="{{ site.baseurl }}/static/favicon.ico" />
+	    <script src="{{ site.baseurl }}/static/bootstrap.js"></script>
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/static/syntax.css">
+    </head>
+    
+    <body>
+    
+        <div class="wrapper">
+        
+		    <div class="page">
+		
+			    <nav class="nav">
+				    <ul>
+					    <li><a href="{{ site.baseurl }}{{ site.blog-url }}">Blog</a></li>
+					    <li><a href="{{ site.project-url }}">Dev</a></li>
+					    <li><a href="{{ site.wiki-url }}">Wiki</a></li>
+					    {% if site.project-version %}<li class="download"><a href="{{ site.project-download-url }}">Download <span class="version">{{ site.project-version }}</span></a></li>{% endif %}
+				    </ul>
+			    </nav>
+			    
+			    <header class="header">
+				    <h1 class="title"><a href="{{ site.baseurl }}/" title="{{ site.name }}">{{ site.name }}</a></h1>
+				    <h2 class="tagline">{{ site.tagline }}</h2>
+			        <p>An <em>open-source</em> <strong>ERP system</strong> based on <a href="http://www.djangoproject.com" title="Django">Django</a>.</p>
+			    </header>
+			
+			    <hr class="sep" />
+
+                <div class="content">
+                    {{ content }}
+                </div>
+                
+            </div>
+            
+            <footer class="footer">
+                <p>Copyright &#169; 2013-{{ site.time | date: '%Y' }} <a href="https://github.com/djangoERPTeam/">DjangoERPTeam</a>. All rights reserved.</p>
+                <p>Inspired by <a href="https://github.com/sebnitu/BaseDemo">BaseDemo</a>. Code responsibly.</p>
+            </footer>
+            
+        </div>
+        
+    </body>
+    
+</html>

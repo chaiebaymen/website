@@ -1,0 +1,9 @@
+# Linux
+*~
+
+# Ruby & Bundler
+Gemfile.lock
+.bundle
+
+# Jekyll
+_site

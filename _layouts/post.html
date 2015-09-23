@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<article>
+    <h1>{{ page.title }}</h1>
+    <h4 class="meta">{{ page.date | date_to_string }}</h4>
+
+    <div class="post">
+        {{ content }}
+    </div>
+			
+    <hr class="sep" />
+    
+    <p><a href="{{ site.baseurl }}{{ site.blog-url }}" title="Back to blog">&#171; View all</a></p>
+</article>
