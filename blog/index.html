@@ -3,16 +3,22 @@ layout: default
 title: Blog
 ---
 
-<div class="blog">
-    <h2>Blog</h2>
+<h2 class="ui red ribbon label">Blog</h2>
+<div class="ui items">
     {% for post in site.posts %}
-    <article class="post">
-        <header>
-            <h3><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
-            <h4 class="meta">{{ post.date | date_to_string }}</h4>
-        </header>
-        {{ post.excerpt }}
-        <p><a href="{{ site.baseurl }}{{ post.url }}" title="Read more...">Read more...</a></p>
-    </article>
+    <div class="item">
+        <div class="content">
+            <a class="header" href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            <div class="meta">{{ post.date | date_to_string }}</div>
+            <div class="description">
+                {{ post.excerpt }}
+            </div>
+            <div class="extra">
+                <a href="{{ site.baseurl }}{{ post.url }}" title="Read more...">
+                    Read more...
+                </a>
+            </div>
+        </div>
+    </div>
     {% endfor %}
 </div>

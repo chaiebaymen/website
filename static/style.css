@@ -1,0 +1,149 @@
+body {
+    background-color: #ccc;
+}
+
+hr.ui.divider {
+    margin: 3rem 0;
+}
+
+a {
+    color: #db2828;
+}
+
+a:hover {
+    color: #b21e1e;
+}
+
+.ui.very.padded hr.ui.divider {
+    margin: 3rem -3rem;
+}
+
+.ui.header {
+    font-weight: 500;
+}
+
+.ui.header .meta {
+    font-size: 0.7em;
+    line-height: 0.7em;
+    color: rgba(0,0,0,.6);
+}
+
+.ui.post.header {
+    background-color: #f8f8f0;
+    padding: 3rem;
+    margin: -3rem;
+}
+
+.ui.very.padded .ui.ribbon {
+    left: -4rem;
+    padding-left: 4rem;
+    text-transform: uppercase;
+}
+
+.ui.quote.message {
+    padding: 3rem 3rem 4rem;
+    margin: -3rem;
+    background: #f8f8f9 url(quotes.png) no-repeat bottom right;
+    box-shadow: none;
+    text-align: center;
+}
+
+.ui.quote.message .ui.ribbon {
+    float: left;
+}
+
+.ui.items>.item>.content>a.header:hover {
+    color: #b21e1e;
+}
+
+#wrapper {
+    margin-top: 3em;
+}
+
+#logo .title,
+#logo .tagline {
+    font-size: 0;
+}
+
+#logo h1 a {
+    display: block;
+    width: 241px;
+    height: 58px;
+    background: url(logo.png) no-repeat center;
+}
+
+#top-menu {
+    position: relative;
+    float: right;
+    margin-top: -3em;
+    margin-right: -3em;
+    top: -1px;
+    right: -1px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#footer {
+    margin: 3em 0;
+}
+
+.vision { clear: both; }
+
+.vision .ui.icon.header .ui.circular.label {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.vision .gallery {
+    display: block;
+    margin-top: 1.5rem !important;
+}
+.vision .gallery a {
+    display: inline-block;
+    clear: left;
+    background: no-repeat left center;
+    margin-right: 50px;
+    margin-bottom: 20px; 
+    font-size: 0;
+}
+.vision .gallery a:hover { background-position: right center; }
+
+.vision.modern .gallery a.python { background-image: url(python-logo.png); width: 123px; height: 35px; }
+.vision.modern .gallery a.django { background-image: url(django-logo.png); width: 100px; height: 35px; }
+.vision.modern .gallery a.html5 { background-image: url(html5-logo.png); width: 43px; height: 61px; }
+.vision.modern .gallery a.semanticui { background-image: url(semanticui-logo.png); width: 61px; height: 61px; margin-right: 0; }
+
+.vision.elegant .ui.icon.header:after {
+    visibility: visible;
+    content: "A user-oriented design";
+    cursor: pointer;
+    clear: left;
+    display: block;
+    font-size: 0;
+    width: 250px;
+    height: 100px;
+    margin: 1.5rem auto;
+    background: url(user-oriented.png) no-repeat left center;
+}
+.vision.elegant .ui.icon.header:hover:after { background-position: right center; }
+
+.vision.accessible .ui.icon.header:after {
+    visibility: visible;
+    content: "A responsive software";
+    cursor: pointer;
+    clear: left;
+    display: block;
+    font-size: 0;
+    width: 167px;
+    height: 100px;
+    margin: 1.5rem auto;
+    background: url(responsive.png) no-repeat left center;
+}
+.vision.accessible .ui.icon.header:hover:after { background-position: right center; }
+
+.vision.open .gallery a.github {
+    width: 185px;
+    height: 50px;
+    background-image: url(github-logo.png);
+}
+

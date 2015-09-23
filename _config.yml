@@ -3,8 +3,8 @@ tagline: free your business
 baseurl: /django-erp
 permalink: /blog/:year/:month/:day/:title
 blog-url: /blog
-project-url: https://github.com/django-erp/django-erp
-project-download-url: https://github.com/django-erp/django-erp
-wiki-url: https://github.com/django-erp/django-erp/wiki
+project-url: https://github.com/djangoERPTeam/django-erp
+project-download-url: https://github.com/djangoERPTeam/django-erp
+wiki-url: https://github.com/djangoERPTeam/django-erp/wiki
 markdown: redcarpet
 highlighter: pygments

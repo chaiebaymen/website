@@ -5,50 +5,49 @@
 <!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
 <!--[if gt IE 9]><!--><html lang="en"><!--<![endif]-->
     <head>
+        <!-- Standard Meta -->
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <!-- Site Properities -->
 	    <title>{{ site.name }} | {{ page.title }}</title>
         <link rel="shortcut icon" href="{{ site.baseurl }}/static/favicon.ico" />
-	    <script src="{{ site.baseurl }}/static/bootstrap.js"></script>
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="{{ site.baseurl }}/static/syntax.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/static/semantic.min.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/static/style.css">
     </head>
     
     <body>
-    
-        <div class="wrapper">
-        
-		    <div class="page">
-		
-			    <nav class="nav">
-				    <ul>
-					    <li><a href="{{ site.baseurl }}{{ site.blog-url }}">Blog</a></li>
-					    <li><a href="{{ site.project-url }}">Dev</a></li>
-					    <li><a href="{{ site.wiki-url }}">Wiki</a></li>
-					    {% if site.project-version %}<li class="download"><a href="{{ site.project-download-url }}">Download <span class="version">{{ site.project-version }}</span></a></li>{% endif %}
-				    </ul>
-			    </nav>
-			    
-			    <header class="header">
-				    <h1 class="title"><a href="{{ site.baseurl }}/" title="{{ site.name }}">{{ site.name }}</a></h1>
-				    <h2 class="tagline">{{ site.tagline }}</h2>
-			        <p>An <em>open-source</em> <strong>ERP system</strong> based on <a href="http://www.djangoproject.com" title="Django">Django</a>.</p>
-			    </header>
-			
-			    <hr class="sep" />
 
-                <div class="content">
-                    {{ content }}
-                </div>
-                
-            </div>
-            
-            <footer class="footer">
-                <p>Copyright &#169; 2013-{{ site.time | date: '%Y' }} <a href="https://github.com/djangoERPTeam/">DjangoERPTeam</a>. All rights reserved.</p>
-                <p>Inspired by <a href="https://github.com/sebnitu/BaseDemo">BaseDemo</a>. Code responsibly.</p>
-            </footer>
-            
+        <div id="wrapper" class="ui raised very padded container segment">
+		
+	        <nav id="top-menu" class="ui right compact inverted menu">
+	            <a class="item" href="{{ site.baseurl }}/">Vision</a>
+	            <a class="item" href="{{ site.baseurl }}{{ site.blog-url }}">Blog</a>
+		        <a class="item" href="{{ site.project-url }}">Dev</a>
+		        <a class="item" href="{{ site.wiki-url }}">Wiki</a>
+	            {% if site.project-version %}<a class="item" href="{{ site.project-download-url }}">Download <span class="version">{{ site.project-version }}</span></a>{% endif %}
+	        </nav>
+			        
+	        <header id="logo" class="ui header">
+		        <h1 class="title"><a href="{{ site.baseurl }}/" title="{{ site.name }}">{{ site.name }}</a></h1>
+		        <h2 class="tagline">{{ site.tagline }}</h2>
+	            <p class="description">An <em>open-source</em> <strong>ERP system</strong> based on <a href="http://www.djangoproject.com" title="Django">Django</a>.</p>
+	        </header>
+
+            <hr class="ui divider"/>
+
+            <main id="content">
+                {{ content }}
+            </main>
+
         </div>
+                
+        <footer id="footer" class="ui center aligned container">
+            <p>Copyright &#169; 2013-{{ site.time | date: '%Y' }} <a href="https://github.com/djangoERPTeam/">DjangoERPTeam</a>. All rights reserved.</p>
+        </footer>
+
+        <script src="{{ site.baseurl }}/static/jquery.min.js"></script>
+        <script src="{{ site.baseurl }}/static/semantic.min.js"></script>
         
     </body>
     

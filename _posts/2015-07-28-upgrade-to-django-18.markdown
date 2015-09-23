@@ -24,7 +24,9 @@ To know more about **django ERP** releases, please read the [official release po
 
 ## Contributions are welcome
 
-We invite you to join the project following the instructions reported [here] [How to contribute]. **Thank you!**
+We invite you to join the project following the instructions reported [here] [How to contribute].
+
+**Thank you!**
 
 ***--- django ERP Team***
 
