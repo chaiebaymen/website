@@ -20,13 +20,13 @@
 
         <div id="wrapper" class="ui raised very padded container segment">
 		
-	        <nav id="top-menu" class="ui right compact inverted menu">
-	            <a class="item" href="{{ site.baseurl }}/">Vision</a>
-	            <a class="item" href="{{ site.baseurl }}{{ site.blog-url }}">Blog</a>
-		        <a class="item" href="{{ site.project-url }}">Dev</a>
-		        <a class="item" href="{{ site.wiki-url }}">Wiki</a>
-	            {% if site.project-version %}<a class="item" href="{{ site.project-download-url }}">Download <span class="version">{{ site.project-version }}</span></a>{% endif %}
-	        </nav>
+            <nav id="top-menu" class="ui inverted top fixed menu">
+                <a class="item" href="{{ site.baseurl }}/">Vision</a>
+                <a class="item" href="{{ site.baseurl }}{{ site.blog-url }}">Blog</a>
+	            <a class="item" href="{{ site.project-url }}">Dev</a>
+	            <a class="item" href="{{ site.wiki-url }}">Wiki</a>
+                {% if site.project-version %}<a class="item" href="{{ site.project-download-url }}">Download <span class="version">{{ site.project-version }}</span></a>{% endif %}
+            </nav>
 			        
 	        <header id="logo" class="ui header">
 		        <h1 class="title"><a href="{{ site.baseurl }}/" title="{{ site.name }}">{{ site.name }}</a></h1>

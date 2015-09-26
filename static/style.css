@@ -10,6 +10,20 @@ a {
     color: #db2828;
 }
 
+article p img {
+    display: block;
+    margin: 3em auto;
+    max-width: 100%;
+}
+
+blockquote {
+    font-size: 1.2em;
+    padding: 1.5em 1.5em 2em;
+    margin: 1.5em 0;
+    border-left: 10px solid #db2828;
+    background: #f8f8f9 url(quotes.png) no-repeat bottom right;
+}
+
 a:hover {
     color: #b21e1e;
 }
@@ -57,7 +71,6 @@ a:hover {
 }
 
 #wrapper {
-    margin-top: 3em;
     padding-bottom: 6em;
 }
 
@@ -74,14 +87,6 @@ a:hover {
 }
 
 #top-menu {
-    position: relative;
-    float: right;
-    margin-top: -3em;
-    margin-right: -3em;
-    top: -1px;
-    right: -1px;
-    border-top-left-radius: 0;
-    border-bottom-right-radius: 0;
 }
 
 #footer {
@@ -151,3 +156,27 @@ a:hover {
     background-image: url(github-logo.png);
 }
 
+@media(max-width:767px) {
+    #wrapper {
+        margin: 0px !important;
+    }
+}
+
+@media(min-width:768px) {
+
+    #wrapper {
+        margin-top: 3em;
+    }
+
+    #top-menu {
+        position: relative;
+        float: right;
+        width: auto;
+        margin-top: -3em;
+        margin-right: -3em;
+        top: -1px;
+        right: -1px;
+        border-top-right-radius: .28571429rem !important;
+        border-bottom-left-radius: .28571429rem !important;
+    }
+}
