@@ -58,6 +58,7 @@ a:hover {
 
 #wrapper {
     margin-top: 3em;
+    padding-bottom: 6em;
 }
 
 #logo .title,
@@ -84,7 +85,10 @@ a:hover {
 }
 
 #footer {
-    margin: 3em 0;
+    padding: 3em 0 9em;
+    background-image: url(logosm.png);
+    background-repeat: no-repeat;
+    background-position: center 6em;
 }
 
 .vision { clear: both; }
