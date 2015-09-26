@@ -6,6 +6,7 @@ title: Blog
 <h2 class="ui red ribbon label">Blog</h2>
 <div class="ui items">
     {% for post in site.posts %}
+    <div class="ui hidden divider"></div>
     <div class="item">
         <div class="content">
             <a class="header" href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
