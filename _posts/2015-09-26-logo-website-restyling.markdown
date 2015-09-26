@@ -6,7 +6,7 @@ categories: django-erp website restyle
 
 We are pleased to present a full restyling of **django ERP** website.
 
-## New font-end framework
+## New front-end framework
 
 The new layout is based on the solid [Semantic UI] front-end framework.
 
