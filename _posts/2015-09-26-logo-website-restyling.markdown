@@ -4,7 +4,7 @@ title:  "Logo and website restyling"
 categories: django-erp website restyle
 ---
 
-We are pleased to present a full restyling of **django ERP** website.
+We are pleased to present a full restyling of **django ERP** website and logo.
 
 ## New front-end framework
 
