@@ -9,13 +9,15 @@ Welcome to the new website of **django ERP** project!
 ## A brief introduction
 ### First of all: what *django ERP* is?
 
-Well, as its name says, **django ERP** is an *open-source*, *user-oriented*, **ERP system** based on [Django Framework] [Django]. Its story starts in 2006, when its founder, **Emanuele Bertoldi**, decided to develop an ERP system for small and medium companies based on [Python]. At that time, most of ERP solutions were based on old technologies and paradigms, with ugly **UIs** and complex workflows, so the *vision* was to create a solution with an elegant UI and some basics but effective applications to help the users in big problems, leaving the rest to the everyday office suites.
+Well, as its name says, **django ERP** is an *open-source*, *user-oriented*, **ERP system** based on [Django Framework] [Django].
 
-At that time, the project took the name of [Prometeo ERP] and it was just a desktop-based solution based on [wxWidgets]. After one year, more or less, Emanuele decided to rewrite the entire codebase from scratch basing the entire project over a solid *web-based framework*... That day, [Django] officially entered in the game.
+Its story **begins in 2006**, when its founder, **Emanuele Bertoldi**, decided to develop an ERP system for small and medium companies based on [Python]. At that time, most of ERP solutions were based on old technologies and paradigms, with ugly **UIs** and complex workflows, so the *vision* was to create a solution with an elegant UI and some basic but effective applications to help the users in big problems, leaving the rest to the everyday office suites.
+
+At that time, the project took the name of [Prometeo ERP] and was just a desktop-based solution based on [wxWidgets]. After one year, more or less, the original author decided to rewrite the entire codebase from scratch basing the entire project over a solid *web framework*... **That day, [Django] officially entered in the game.**
 
 ### And then? What's next?
 
-Well, after a couple of years behind [Prometeo ERP] project, a couple of issues reveal some big design-problems in the general software architecture making really hard to maintain and extend the framework. Also, new technologies and programming paradigms became prominent in the market. Finally, some backward incompatibilities with new versions of [Django] make really urgent to take a crucial decision:
+After a couple of years with [Prometeo ERP] project, some curcial issues reveal big design-problems in the general software architecture making really hard to maintain and extend the framework. Also, new technologies and programming paradigms became prominent in the market. Finally, some backward incompatibilities with new versions of [Django] make really urgent to take a crucial decision:
 
 > Put more efforts on **Prometeo ERP** codebase or rewrite all from scratch, again?
 
