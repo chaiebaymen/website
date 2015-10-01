@@ -16,7 +16,7 @@ If you want to learn more about all the new features provided by the latest Djan
 
 ## What's next?
 
-The plan for **django ERP** is simply to follow the [official roadmap], with one important addition: is now clear the **front-end** also needs a more solid foundation. In order to achieve this goal, in the near future we plan to refactor the entire *front-end* on the top of [Bootstrap] and [Font Awesome icons] technologies.
+The plan for **django ERP** is simply to follow the [official roadmap], with one important addition: is now clear the **front-end** also needs a more solid foundation. In order to achieve this goal, in the near future we plan to refactor the entire *front-end* on the top of <del>[Bootstrap]</del> <ins>[Semantic UI]</ins> and [Font Awesome icons] technologies.
 
 In order to be informed about the current state of the project and future plans, please visit the [official roadmap].
 
@@ -35,6 +35,7 @@ We invite you to join the project following the instructions reported [here] [Ho
 [Django]: https://www.djangoproject.com
 [Django release notes]: https://docs.djangoproject.com/en/1.8/releases/1.8/
 [Bootstrap]: http://getbootstrap.com
+[Semantic UI]: http://semantic-ui.com/
 [Font Awesome icons]: http://fortawesome.github.io/Font-Awesome/icons/
 [official roadmap]: https://github.com/djangoERPTeam/django-erp/wiki/Roadmap
 [official release policy]: https://github.com/djangoERPTeam/django-erp/wiki/Release-policy
