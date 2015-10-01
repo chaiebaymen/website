@@ -1,5 +1,5 @@
 body {
-    background-color: #ccc;
+    background-color: #c8c8c9;
 }
 
 hr.ui.divider {
@@ -86,7 +86,8 @@ a:hover {
     background: url(logo.png) no-repeat center;
 }
 
-#top-menu {
+#content {
+    font-size: 1.1em;
 }
 
 #footer {
