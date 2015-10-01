@@ -22,7 +22,7 @@ We also chose to give to **django ERP** logo a more *flat style* followed by a n
 
 In the following picture you can see the difference between the old version and the revamped logo:
 
-![django ERP logo comparison]({{ site.baseurl }}/static/new-logo-comparison.png)
+![django ERP logo comparison]({{ site.baseurl }}/media/new-logo-comparison.png)
 
 In general, the current revision aims to improve brand recognition, putting more emphasis on the **ERP** suffix.
 
