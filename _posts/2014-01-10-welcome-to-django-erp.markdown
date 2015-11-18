@@ -37,13 +37,15 @@ We decided to fork a **new brand project**, based on [Prometeo ERP] experience, 
 
 The new brand it's not just a matter of name, **it's a new project identity and philosophy**.
 
+![django ERP old login page]({{ site.baseurl }}/media/djangoerp-old-ui0.png)
+
 ### The brand
 
 The new name, **django ERP**, emphasizes the importance of [Django] framework and its main role in the project architecture, while the tagline ***"free your business"*** keeps a link with its ancestor ([Prometeo ERP]).
 
 The logo is an optical illusion: what do you see? An **hand-cursor** (*technology*, *web*) or a **swan** (*elegance*, *freedom*)?
 
-![django ERP logo]({{ site.baseurl }}/static/logo.png)
+![django ERP logo]({{ site.baseurl }}/media/old-logo.png)
 
 The **vision** is all here: *technology, accessibility, elegance and freedom*.
 

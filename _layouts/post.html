@@ -7,15 +7,15 @@ layout: default
         <i class="ui newspaper icon"></i>
         <span class="content">
             {{ page.title }}
-            <div class="meta">{{ page.date | date_to_string }}</div>
+            <div class="sub header">{{ page.date | date_to_string }}</div>
         </span>
     </h1>
 			
-    <hr class="ui divider"/>
+    <hr class="ui section divider"/>
 
     {{ content }}
 			
-    <hr class="ui divider"/>
+    <hr class="ui section divider"/>
 
     <a class="ui labeled icon button" href="{{ site.baseurl }}{{ site.blog-url }}" title="Back to blog">
         <i class="left chevron icon"></i>

@@ -1,74 +1,60 @@
-body {
-    background-color: #c8c8c9;
-}
-
-hr.ui.divider {
-    margin: 3rem 0;
-}
-
-a {
-    color: #db2828;
-}
-
-article p img {
-    display: block;
-    margin: 3em auto;
-    max-width: 100%;
-}
-
-blockquote {
-    font-size: 1.2em;
-    padding: 1.5em 1.5em 2em;
-    margin: 1.5em 0;
-    border-left: 10px solid #db2828;
-    background: #f8f8f9 url(quotes.png) no-repeat bottom right;
-}
-
-a:hover {
-    color: #b21e1e;
-}
-
-.ui.very.padded hr.ui.divider {
-    margin: 3rem -3rem;
-}
-
-.ui.header {
-    font-weight: 500;
-}
-
-.ui.header .meta {
-    font-size: 0.7em;
-    line-height: 0.7em;
-    color: rgba(0,0,0,.6);
-}
+/* Components *****************************************************************/
 
 .ui.post.header {
-    background-color: #f8f8f0;
+    background-color: #f8f8f9;
     padding: 3rem;
-    margin: -3rem;
+    margin: calc(-2rem - 1px) -3rem -2rem;
 }
 
-.ui.very.padded .ui.ribbon {
-    left: -4rem;
-    padding-left: 4rem;
-    text-transform: uppercase;
+article img {
+    display: block;
+    margin: 3rem auto;
+    max-width: calc(100% - 2px);
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: .28571429rem;
+}
+
+article strong+img {
+    margin-top: .5em;
 }
 
 .ui.quote.message {
     padding: 3rem 3rem 4rem;
-    margin: -3rem;
-    background: #f8f8f9 url(quotes.png) no-repeat bottom right;
+    margin: 0;
+    background: #f8f8f9;
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: 0;
     box-shadow: none;
     text-align: center;
 }
 
-.ui.quote.message .ui.ribbon {
-    float: left;
+.ui.quote.message:before {
+    content: "\f10e"; /* Quote Right */
+    font-family: Icons;
+    position: absolute;
+    bottom: .5em;
+    right: .5em;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, .2);
 }
 
-.ui.items>.item>.content>a.header:hover {
-    color: #b21e1e;
+.ui.divider+.ui.quote.message,
+.ui.divider+* > .ui.quote.message:first-child {
+    margin-top: calc(-2rem - 2px);
 }
+
+.ui.quote.message+.ui.divider {
+    margin-top: -1px;
+}
+
+.ui.very.padded .ui.quote.message {
+    border-left: 0;
+    border-right: 0;
+    margin-left: -3rem;
+    margin-right: -3rem;
+}
+
+/* Layout *********************************************************************/
 
 #wrapper {
     padding-bottom: 6em;
@@ -157,6 +143,8 @@ a:hover {
     background-image: url(github-logo.png);
 }
 
+/* Responsive *****************************************************************/
+
 @media(max-width:767px) {
     #wrapper {
         margin: 0px !important;
@@ -180,4 +168,4 @@ a:hover {
         border-top-right-radius: .28571429rem !important;
         border-bottom-left-radius: .28571429rem !important;
     }
-}
+}*/

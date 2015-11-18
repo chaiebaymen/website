@@ -1,0 +1,67 @@
+body {
+    min-width: 320px;
+    min-height: 480px;
+    background-color: #e8e8e9;
+}
+
+a,
+.ui.breadcrumb a {
+    color: #db2828;
+}
+
+a:hover,
+.ui.breadcrumb a:hover,
+.ui.items>.item>.content>a.header:hover {
+    color: #bb0808;
+}
+
+a:focus {
+    outline: none;
+}
+
+blockquote {
+    position: relative;
+    font-size: 1.2em;
+    padding: 1.5em 1.5em 2em;
+    margin: 1.5em 0;
+    border-left: 10px solid #db2828;
+    background: #f8f8f9;
+}
+
+blockquote:before {
+    content: "\f10e"; /* Quote Right */
+    font-family: Icons;
+    position: absolute;
+    bottom: .5em;
+    right: .5em;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, .2);
+}
+
+.ui.inverted {
+    background-color: #424a5d !important;
+}
+
+.ui.ribbon.label {
+    z-index: 9;
+}
+
+.ui.very.padded .ui.section.divider {
+    margin-left: -3rem;
+    margin-right: -3rem;
+}
+
+.ui.very.padded .ui.ribbon.label {
+    margin-left: calc(-1rem - 1em);
+    padding-left: calc(1rem + 1em);
+}
+
+.ui.ribbon+.ui.quote.message {
+    margin-top: -1rem;
+}
+
+.ui.header.label {
+    display: inline-block;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
