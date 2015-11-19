@@ -51,9 +51,8 @@ blockquote:before {
     margin-right: -3rem;
 }
 
-.ui.very.padded .ui.ribbon.label {
+.ui.very.padded .ui.ribbon.label:not(.right) {
     margin-left: calc(-1rem - 1em);
-    padding-left: calc(1rem + 1em);
 }
 
 .ui.ribbon+.ui.quote.message {
@@ -64,4 +63,15 @@ blockquote:before {
     display: inline-block;
     font-size: 1rem;
     text-transform: uppercase;
+}
+
+.ui.header.label > .icon {
+    margin-top: -.25em;
+    font-size: 1em;
+}
+
+@media(min-width:768px) {
+    .desktop.hidden {
+        display: none;
+    }
 }

@@ -1,9 +1,15 @@
 /* Components *****************************************************************/
 
 .ui.post.header {
-    background-color: #f8f8f9;
+    position: relative;
     padding: 3rem;
-    margin: calc(-2rem - 1px) -3rem -2rem;
+    margin: calc(-2rem - 1px) -3rem calc(-2rem - 1px);
+    background-color: #f8f8f9;
+    border: 1px solid rgba(34,36,38,.15);
+}
+
+.ui.ribbon+.ui.post.header {
+    margin-top: -1rem;
 }
 
 article img {
@@ -60,9 +66,20 @@ article strong+img {
     padding-bottom: 6em;
 }
 
-#logo .title,
-#logo .tagline {
+#logo {
+    margin-bottom: 4rem;
+}
+
+#logo .title {
     font-size: 0;
+}
+
+#logo .tagline {
+    display: none;
+}
+
+#logo h1 {
+    margin: 3rem auto 2rem;
 }
 
 #logo h1 a {
@@ -72,15 +89,20 @@ article strong+img {
     background: url(logo.png) no-repeat center;
 }
 
+#logo p.description {
+    font-size: .8em;
+}
+
 #content {
     font-size: 1.1em;
+    margin-top: -3em;
 }
 
 #footer {
     padding: 3em 0 9em;
     background-image: url(logosm.png);
     background-repeat: no-repeat;
-    background-position: center 6em;
+    background-position: center 6.5em;
 }
 
 .vision { clear: both; }
@@ -149,12 +171,24 @@ article strong+img {
     #wrapper {
         margin: 0px !important;
     }
+
+    #logo h1 a {
+        margin: 0 auto;
+    }
+
+    #logo p.description {
+        text-align: center;
+    }
 }
 
 @media(min-width:768px) {
 
     #wrapper {
         margin-top: 3em;
+    }
+
+    #logo h1 {
+        margin-top: 0;
     }
 
     #top-menu {
@@ -168,4 +202,4 @@ article strong+img {
         border-top-right-radius: .28571429rem !important;
         border-bottom-left-radius: .28571429rem !important;
     }
-}*/
+}

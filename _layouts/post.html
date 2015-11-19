@@ -2,23 +2,29 @@
 layout: default
 ---
 
+<a class="ui ribbon red header label" href="{{ site.baseurl }}{{ site.blog-url }}" title="Back to blog">
+    <i class="left arrow icon"></i>
+</a>
+
+<h1 class="ui post header">
+    <i class="ui newspaper icon"></i>
+    <span class="content">
+        {{ page.title }}
+        <div class="sub header">
+            {{ page.date | date_to_string }}
+        </div>
+    </span>
+</h1>
+			
+<hr class="ui section divider"/>
+
 <article>
-    <h1 class="ui post header">
-        <i class="ui newspaper icon"></i>
-        <span class="content">
-            {{ page.title }}
-            <div class="sub header">{{ page.date | date_to_string }}</div>
-        </span>
-    </h1>
-			
-    <hr class="ui section divider"/>
-
     {{ content }}
-			
-    <hr class="ui section divider"/>
-
-    <a class="ui labeled icon button" href="{{ site.baseurl }}{{ site.blog-url }}" title="Back to blog">
-        <i class="left chevron icon"></i>
-        View all
-    </a>
 </article>
+			
+<hr class="ui section divider"/>
+
+<a class="ui labeled icon button" href="{{ site.baseurl }}{{ site.blog-url }}" title="Back to blog">
+    <i class="left chevron icon"></i>
+    View all
+</a>

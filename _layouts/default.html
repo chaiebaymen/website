@@ -24,15 +24,19 @@
             <nav id="top-menu" class="ui inverted top fixed menu">
                 <a class="item" href="{{ site.baseurl }}/">Vision</a>
                 <a class="item" href="{{ site.baseurl }}{{ site.blog-url }}">Blog</a>
-	            <a class="item" href="{{ site.project-url }}">Dev</a>
-	            <a class="item" href="{{ site.wiki-url }}">Wiki</a>
-                {% if site.project-version %}<a class="item" href="{{ site.project-download-url }}">Download <span class="version">{{ site.project-version }}</span></a>{% endif %}
+                <div class="right menu">
+	                <a class="item" href="{{ site.project-url }}">Dev</a>
+	                <a class="item" href="{{ site.wiki-url }}">Wiki</a>
+                    {% if site.project-version %}<a class="item" href="{{ site.project-download-url }}">Download <span class="version">{{ site.project-version }}</span></a>{% endif %}
+                </div>
             </nav>
 			        
 	        <header id="logo" class="ui header">
 		        <h1 class="title"><a href="{{ site.baseurl }}/" title="{{ site.name }}">{{ site.name }}</a></h1>
 		        <h2 class="tagline">{{ site.tagline }}</h2>
-	            <p class="description">An <em>open-source</em> <strong>ERP system</strong> based on <a href="http://www.djangoproject.com" title="Django">Django</a>.</p>
+	            <p class="description">
+                    An <em>open-source</em> <strong>ERP system</strong> based on <a href="http://www.djangoproject.com" title="Django">Django</a>.
+                </p>
 	        </header>
 
             <hr class="ui section divider"/>
@@ -44,7 +48,11 @@
         </div>
                 
         <footer id="footer" class="ui center aligned container">
-            <p>Copyright &#169; 2013-{{ site.time | date: '%Y' }} <a href="https://github.com/django-erp/">django ERP Team</a>. All rights reserved.</p>
+            <p>
+                Copyright &#169; 2013-{{ site.time | date: '%Y' }} <a href="https://github.com/django-erp/">django ERP Team</a>.
+                <br class="desktop hidden"/>
+                All rights reserved.
+            </p>
         </footer>
 
         <script src="{{ site.baseurl }}/static/jquery.min.js"></script>
